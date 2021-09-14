@@ -34,3 +34,5 @@ jobs:
           heroku_app_name: "pacific-shore-93723"
           heroku_email: "fang.kyle@gmail.com"
           healthcheck: "https://pacific-shore-93723.herokuapp.com/health"
+          checkstring: "ok"
+          rollbackonhealthcheckfailed: true
