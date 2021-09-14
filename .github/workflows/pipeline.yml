@@ -40,6 +40,7 @@ jobs:
           healthcheck: "https://pacific-shore-93723.herokuapp.com/health"
           checkstring: "ok"
           rollbackonhealthcheckfailed: true
+      - uses: actions/checkout@v2
       - if: ${{ github.event_name == 'push' }}
         name: Bump version and push tag
         uses: anothrNick/github-tag-action@1.33.0
