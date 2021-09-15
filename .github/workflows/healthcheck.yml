@@ -3,7 +3,6 @@ name: Periodic health check
 on:
   schedule:
     - cron: '0 20 * * *'
-      - master
   push:
     branches:
       - master
